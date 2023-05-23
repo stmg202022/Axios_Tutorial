@@ -14,7 +14,9 @@ const GlobalInstance = () => {
       const res2 = await axios(randomUserUrl);
       console.log(res1);
       // console.log(res2);
-    } catch (error) {}
+    } catch (error) {
+      console.log(error.response);
+    }
   };
 
   useEffect(() => {
